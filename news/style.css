@@ -1,0 +1,105 @@
+
+	  *{
+		  margin:0;
+		  padding:0;
+	  }
+	  .nav{
+		  height:50px;
+		  width:100%;
+		  display:flex;
+		  background-color:#000;
+		  align-items:center;
+		  justify-content:space-between;
+	  }
+	  .nav img{
+		  width:130px;
+		  height:30px;
+		  margin-left:5%;
+	  }
+	  .nav-link{
+		  width:300px;
+		  display:flex;
+		  margin-right:5%;
+		  justify-content:space-evenly;
+	  }
+	  .nav-link a{
+		  text-decoration:none;
+		  color:#fff;
+		  font-family: 'Syne Mono', monospace;
+	  }
+	  .heading{
+		  margin-left:5%;
+		  margin-right:5%;
+		  font-size:54px;
+		  font-family: 'Itim', cursive;
+	  }
+	  .banner{
+		  width:90%;
+		  margin-left:5%;
+		  margin-right:5%;
+	  }
+	  .con{
+		  display:flex;
+	  }
+	  .para{
+		  width:60%;
+		  margin-left:5%;
+		  font-size:6px;
+		  font-family: 'Itim', cursive;
+	  }
+	  .rp{
+		  width:30%;
+		  background-color:#f2f2f2;
+		  margin-right:5%;
+		  font-family: 'Itim', cursive;
+		  display:flex;
+		  flex-direction:column;
+		  align-items:center;
+	  }
+	  .rp h2{
+		  font-size:34px;
+		  color:#000;
+		  margin-left:5%;
+		  padding-top:20px;
+	  }
+	  .oth-news{
+		  width:95%;
+		  height:200px;
+		  margin:5%;
+		  text-decoration:none;
+		  color:#000;
+	  }
+	  .oth-news p{
+		  padding:0;
+		  margin:0;
+		  font-size:14px;
+	  }
+	  
+	  @media only screen and (max-width: 600px) {
+		  .heading{
+		  margin-left:5%;
+		  margin-right:5%;
+		  font-size:40px;
+		  font-family: 'Itim', cursive;
+		  }
+		  .con{
+		  display:block;
+		  }
+		  .para{
+		  width:90%;
+		  font-size:12px;
+		  margin-left:5%;
+		  margin-right:5%;
+		  font-family: 'Itim', cursive;
+		  }
+		  .rp{
+		  width:100%;
+		  background-color:#f2f2f2;
+		  margin-top:20px;
+		  margin-right:5%;
+		  font-family: 'Itim', cursive;
+		  display:flex;
+		  flex-direction:column;
+		  align-items:center;
+		  }
+	  }

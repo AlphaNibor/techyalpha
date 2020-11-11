@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon.jpg">
+    <title>TechyAlpha</title>
+  
+	  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+	  <link href="style.css" type="text/css" rel="stylesheet">
+  
+  </head>
+  <body>
+  
+<div class="nav">
+	<img src="./img/logo.png"alt="logo">
+	<p class="nav-link"><a href="../index.html" >HOME</a> <a href="../news.html" >BLOG</a> <a href="../about.html" >ABOUT</a> <a href="../contact.html" >CONTACT</a></p>
+</div>
+<h1 class="heading">AdGuard Home: Another Brick in the Ad-Blocking Wall</h1>
+<img class="banner" src="./img/xl-2020-ubuntu-adguard-1.jpg"alt="image">
+<div class="con">
+<div class="para">
+	<p><b style="font-size:14px;">C</b>anonical's <a href="https://ubuntu.com/blog/set-up-the-adguard-home-ubuntu-appliance" >AdGuard Home Ubuntu Appliance</a> is a new addition to the ranks of its appliances. With this offering, users can quickly implement a ready-made solution for blocking bothersome content at the network level on a home network. Doing so involves no more than downloading, installing, and booting the newly released lean Ubuntu image with the AdGuard Home service pre-installed and pre-configured.<br><br>
+	A better way to phrase this development, though, is that Ubuntu is building something, and it just laid another sturdy brick. The edifice may be humble (and little more than a foundation) now, but it holds more potential than users may at first realize.</p>
+	
+	<p style="margin-top:20px;"><b style="font-size:14px;">Miniaturized Ubuntu</b><br>
+	At the core of the emerging foundation that is Ubuntu Appliances is the aptly named Ubuntu Core, a slimmed-down Ubuntu operating system crafted with the IoT use case in mind. What distinguishes Ubuntu Core, which users can run as a standalone, and Ubuntu Appliances, is that each appliance comes preloaded with a featured service, and all the necessary programs are installed and managed via the Snaps containerized installation mechanism.<br><br>
+	With this structure, appliances are designed to just work "out of the box," if we borrow that brick-and-mortar paradigm in the sense of post-flashing, post-booting, and post-configuration. Users will need to boot the appliance device and perform a token amount of local administration, provide it with an Internet connection with a static LAN IP address, and set up an Ubuntu One account if they don't have one. A few web GUI prompts later, and the user is up and running.<br><br>
+	Ubuntu then does the rest, and that encompasses a lot of heavy lifting. Appliances will update themselves for a 10-year lifespan as long as they have Internet access. If all goes according to plan, users shouldn't have to give a second thought to their appliance unless they want to change its configuration. Even then, all they have to do is enter the Web administration GUI, toggle a few switches, and close the tab</p>
+
+	<p style="margin-top:20px;"><b style="font-size:14px;">Alliance to Bolster the Fight</b><br>
+	Over the last few months, the Ubuntu Core team has been gradually releasing images of Ubuntu Core that bundle in specially tailored third-party applications or services, transforming the finished product from an Ubuntu Core to an Ubuntu Appliance. As the latest addition to the team, AdGuard Home now stands alongside Nextcloud, Plex Media Server, and a few other appliances, a feat stemming from a collegial, if modest collaboration between Ubuntu and AdGuard.<br><br>
+	"We love Ubuntu and are always ready for collaborations," said Andrey Meshkov, chief technology officer at AdGuard. "From the tech point of view, we didn't have to rework much on our part."<br><br>
+	So, with Ubuntu Core forming a base for whatever service the respective appliance aims to feature, it's this latter element that sets them all apart. For those unfamiliar with AdGuard's work, their mission is to stem the tide of ads and other irksome content, and they are willing to do battle on multiple fronts. The company does offer a traditional blocking extension for browsers, the battlefield where content-blocking skirmishes commonly rage today, but they are striving increasingly to take the fight to the network level.<br><br>
+	Your typical ad-blocking browser extension blocks ads as the browser fetches webpage resources for rendering. When the browser catches itself fetching materials for an ad, it throws the materials away.<br><br>
+	AdGuard Home blocks ads by sitting on your network and handling all the DNS requests, those phonebook lookups that turn URLs into the IP addresses, made by all the devices on it. When it sees a DNS query for a domain it knows to serve ads, AdGuard Home responds to the requesting device with an unusable IP address for the ad resource instead of its actual address. The requesting device, completely unaware of this substitution, tries to fetch its ad from an essentially null IP address, and just moves on when that inevitably fails. In this way, AdGuard Home quietly tricks your device into looking in the wrong place and quickly skipping to the next resource when an ad comes up.</p>
+
+	<p style="margin-top:20px;"><b style="font-size:14px;">Two Sets of Eyes, One Vision</b><br>
+	The two companies that made this gadget possible, Canonical and AdGuard, are definitely on the same wavelength with sober short-term expectations, but also optimistic long-term ones.<br><br>
+	Both of them caution that AdGuard Home is not for the faint of heart. In its preexisting featured profiles on AdGuard Home prior to its Ubuntu Appliance manifestation, AdGuard conceded that it is targeted at hobbyists. Meskov stood by this assessment insofar as things currently stand.<br><br>
+	"In its current form AdGuard Home is not an easy thing to install, set up and utilize," said Meshkov. "It suits more for advanced 'geeky' users, because it requires some serious level of technology knowledge."<br><br>
+	Specifically, users without a firm grasp of LAN administration and DNS will likely be intimidated. One incorrect IP address setting on your router and things swiftly come to a halt.<br><br>
+	Rhys Davies, product manager for IoT at Canonical, had a sunnier estimation of the difficulty level for installing and configuring the Appliance iteration of AdGuard Home. By building the service directly into an appliance, he maintains that much of the friction that users would otherwise face is smoothed out.<br><br>
+	"[It's meant for] users who are interested in AdGuard Home who perhaps aren't as tech savvy as [AdGuard's] typical users, or who just want to be able to install a tool like AdGuard Home on their own or a friend's network, and not have to worry about it again," Davies said.<br><br>
+	Weighed against the wide scope of Linux pet projects, the AdGuard Home Appliance installation process more resembles Davies' outlook. At a minimum, the appliance distills what would otherwise be two installations -- the Ubuntu base system and then AdGuard Home -- into one. But it goes further and frontloads the AdGuard Home configuration in the form of a simple Web-based GUI.<br><br>
+	Davies is also apt to point out that all Ubuntu Core-based systems don't require users to put much time or effort into maintaining the system once it actually is up and running. Especially for operating systems on headless devices, which users don't directly interact with very often (if at all), traditionally the burden of maintenance is greater than that of initial installation and configuration. Sitting down once and knocking out device setup is one thing, but disciplining oneself to perform regular check-ins to keep the device from entering a fail state is another.<br><br>
+	Canonical and AdGuard also share a vision of a future where network-based ad blockers are the norm. This view was present in Ubuntu's post debuting the appliance, and in AdGuard's existing content profiling AdGuard Home.<br><br>
+	In support of this claim, Meshkov pointed out that browsers and mobile OSes (and their associated ecosystems) are taking an increasingly rigid line against ad blocking.<br><br>
+	"You don't have to go far for the examples. Chrome Manifest V3 and Safari Content Blocking strictly define the scope of content blocking in browsers," Meshkov said. "As for the system-level content blocking, Google restricts distribution of system ad blockers in the Play Store, and Apple is not much different.<br><br>
+	Indeed, extension-based ad blocking is functionally not an option for mobile, the platform which has eclipsed desktop computers (a category which includes laptops) to be the most prevalent personal computing device for American adults.<br><br>
+	Meshkov admits that AdGuard Home is an experiment, but one he thinks is vital, lest users become defenseless when ads finally and fully outflank them. What follows this gambit, he wouldn't say, other than that it will strive to be more broadly usable by non-technical users.<br><br>
+	For his part, Davies is confident that the AdGuard user base, in time, will take the service places.<br><br>
+	"It's a great application that does its job very nicely and in its appliance form, it could become as commonplace as the router it sits next to," Davies said. "I believe AdGuard Home is very popular, and so the adoption of the appliance really depends on AdGuard's users."<br><br>
+	To successfully pitch a dedicated AdGuard Home device as equipment without which a user's home network is incomplete would be quite the coup. To be sure, there is an understandable appeal to consumers for solutions entailing buying a box, plugging it in, and nothing else. Whether mainstream adoption of AdGuard Home will require bringing the product to market in that manner, and whether AdGuard can pull it off, remains to be seen.<br><br>
+	Crucially, Davies is keen to point out that the Ubuntu Appliance is not meant to steal the show, but only to package a worthwhile service in a streamlined delivery vehicle. Courteous and modest as the sentiment is, one would be hard-pressed to find a more straightforward way to get AdGuard thrumming on your home network.<br><br>
+	In this regard, the contribution that Canonical and AdGuard have made here is noteworthy, as it places reinforcements for the home user's often sorely lacking digital defenses much more within reach.</p>
+
+	<p style="margin-top:20px;"><b style="font-size:14px;">Watching Out for the Cat to Pounce</b><br>
+	Eldridge Alexander, an information security researcher and manager at Duo Labs at Duo Security (not speaking in his capacity in that role) sees merit in shipping a service like AdGuard Home's in one of its most user-friendly formats to date, as an appliance. On top of that, he agreed that the service had potential to find a way into users' homes, though in a different guise.<br><br>
+	For Alexander, he sees more viability in folding a network-level blocking service into another device, preferably the router itself, as opposed to proffering it as its own box.<br><br>
+	"I think if the box you could buy at Best Buy was also a router, it would be compelling," Alexander said. "As computing gets cheaper, routers have more computing power to do more fun things."<br><br>
+	As chip fabrication continues to advance, the horsepower for the most basic chips that end up in embedded systems like routers will rise enough that bundling more services into routers will certainly be possible.<br><br>
+	The history of computing consists not of the whole body of researchers in the field pursuing a singular goal, but of disparate teams across the community experimenting with multiple approaches to solving the same problem.<br><br>
+	On the subject of content blocking, Alexander partakes of this tradition in cautioning us not to hail AdGuard Home's approach, edifying as it is, as the indomitable champion of the every-user. Techniques exist today which, though intended to aid users rather than aggravate them, could easily be adapted to the purpose of ad delivery. One is the retooling of DNS to bolt more secure protocols on top of it, namely DNS over TLS (DoT) and especially DNS over HTTP (DoH). Both of these techniques make DNS requests, which are normally unencrypted, over a protocol that allows encryption, preventing prying eyes from determining where your connection is bound for.<br><br>
+	"DoH however is generally indistinguishable from other HTTPS traffic such as searching from something or checking your social media," Alexander said. "Devices or applications can embed DoH pointed at servers they control to bypass your DNS settings."<br><br>
+	In other words, the same technology which keeps third parties from snooping on your connection could be wielded by advertisers so that your device can't tell whether it's looking up an ad or your desired content. Thus, wide adoption of DoH by Web advertisers would greatly limit AdGuard Home's protections.<br><br>
+	The other possible sticking point is the way CDNs handle bunches of DNS requests at once. Due to a process called domain rewriting, what would ordinarily be several DNS requests -- some for desirable page resources and others for less-desirable ones--get consolidated into one request pointed at the page's domain.<br><br>
+	"The CDNs can and do rewrite pieces of pages at the edge for various reasons, often to increase security or add features," Alexander said. "However it's conceivable that these 'edge systems' could take a request for example.com, turn around and make the relevant requests for example.com but also googleads.g.doubleclick.net, [and] then respond to the user with the page containing an ad but all coming from example.com (from the user and the user's ad blocker's perspective)."<br><br>
+	Neither of these techniques are widely used to serve ads yet, and there is presently no indication that advertisers are poised to do so. From a technical perspective, though, that can easily change. It all depends on how desperate advertisers get. A future where everyone is blocking unwanted content at the network level would fit the bill for desperation.<br><br>
+	That's not to say that these concerns are cause to be disheartened: that anyone is trying to equip consumers with tools -- open-source ones, no less -- to improve their experience is admirable.<br><br>
+	As ever with progress in Web technology, the quest to make the Internet a friendlier, sightlier, and safer place is a marathon, not a 100-meter dash. What the former footrace analogy's incremental gains lack in panache, they make up for in long-term influence. Whether this particular initiative becomes a mainstay in consumer homes or remains a curiosity for tinkerers, it illustrates the possibility of new models for tomorrow's Web. All it takes is one speedy runner to pick up the baton and run with it.</p>
+
+</div>
+<div class="rp">
+	<h2>Recent posts:</h2>
+	<a href="future.html" class="oth-news">
+		<img style="width:100%;" src="./img/xl-2015-artificial-intelligence-1.jpg" alt="banner">
+		<p>A Vision of the Future From Dell World</p>
+	</a>
+	<a href="unix.html"class="oth-news">
+		<img style="width:100%;" src="./img/xl-2017-linux-terminal-1.jpg" alt="banner">
+		<p>The 'Unix Way'</p>
+	</a>
+	<a href="edge.html"class="oth-news">
+		<img style="width:100%;" src="./img/xl-2020-edge-browser-1.jpg" alt="banner">
+		<p>Microsoft Hones Edge in Time for Holiday Shopping</p>
+	</a>
+	<a href="ai.html" class="oth-news">
+		<img style="width:100%;" src="./img/xl-2020-robot-on-keyboard.jpg" alt="banner">
+		<p>AI's Potential to Manage the Supply Chain</p>
+	</a>
+</div>
+</div>
+<footer style="padding:10px;margin:20px 0px;font-size:8px;color:#fff;background-color:#000;display:flex;justify-content:center;align-items:center;"><p>2020 all ©copyright reserved by techyalpha</p></footer>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon.jpg">
+    <title>TechyAlpha</title>
+  
+	  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+	  <link href="style.css" type="text/css" rel="stylesheet">
+  
+  </head>
+  <body>
+  
+<div class="nav">
+	<img src="./img/logo.png"alt="logo">
+	<p class="nav-link"><a href="../index.html" >HOME</a> <a href="../news.html" >BLOG</a> <a href="../about.html" >ABOUT</a> <a href="../contact.html" >CONTACT</a></p>
+</div>
+<h1 class="heading">The 'Unix Way'</h1>
+<img class="banner" src="./img/xl-2017-linux-terminal-1.jpg"alt="image">
+<div class="con">
+<div class="para">
+	<p><b style="font-size:14px;">I</b>t probably shouldn't, but it routinely astonishes me how much we live on the Web. Even I find myself going entire boots without using anything but the Web browser. With such an emphasis on Web-based services, one can forget to appreciate the humble operating system.<br><br>
+	
+	That said, we neglect our OS at the risk of radically underutilizing the incredible tools that it enables our device to be.<br><br>
+	
+	Most of us only come into contact with one, or possibly both, of two families of operating systems: "House Windows" and "House Practically Everything Else." The latter is more commonly known as Unix.<br><br>
+	
+	Windows has made great strides in usability and security, but to me it can never come close to Unix and its progeny. Though more than 50 years old, Unix has a simplicity, elegance, and versatility that is unrivalled in any other breed of OS.<br><br>
+	
+	This column is my exegesis of the Unix elements I personally find most significant. Doctors of computer science will concede the immense difficulty of encapsulating just what makes Unix special. So I, as decidedly less learned, will certainly not be able to come close. My hope, though, is that expressing my admiration for Unix might spark your own.</p>
+	
+	<p style="margin-top:20px;"><b style="font-size:14px;">The Root of the Family Tree</b><br>
+	If you haven't heard of Unix, that's only because its descendants don't all have the same resemblance to it -- and definitely don't share a name. MacOS is a distant offshoot which, while arguably the least like its forebears, still embodies enough rudimentary Unix traits to trace a clear lineage.<br><br>
+	
+	The three main branches of BSD, notably FreeBSD, have hewn the closest to the Unix formula, and continue to form the backbone of some of the world's most important computing systems. A good chunk of the world's servers, computerized military hardware, and PlayStation consoles are all some type of BSD under the hood.<br><br>
+	
+	Finally, there's Linux. While it hasn't preserved its Unix heritage as purely as BSD, Linux is the most prolific and visible Unix torchbearer. A plurality, if not outright majority, of the world's servers are Linux. On top of that, almost all embedded devices run Linux, including Android mobile devices.</p>
+	
+	<p style="margin-top:20px;"><b style="font-size:14px;">Where Did This Indispensable OS Come From?</b><br>
+	To give as condensed a history lesson as possible, Unix was created by an assemblage of the finest minds in computer science at Bell Labs in 1970. In their task, they set themselves simple objectives. First, they wanted an OS that could smoothly run on whatever hardware they could find since, ironically, they had a hard time finding any computers to work with at Bell. They also wanted their OS to allow multiple users to log in and run programs concurrently without bumping into each other. Finally, they wanted the OS to be simple to administer and intuitively organized. After acquiring devices from the neighboring department, which had a surplus, the team eventually created Unix.<br><br>
+	
+	Unix was adopted initially, and vigorously so, by university computer science departments for research purposes. The University of Illinois at Champaign-Urbana and the University of California Berkeley led the charge, with the latter going so far as to develop its own brand of Unix called the Berkeley Software Distribution, or BSD.<br><br>
+	
+	Eventually, AT&T, Bell's successor, lost interest in Unix and jettisoned it in the early 90s. Shortly following this, BSD grew in popularity, and AT&T realized what a grave mistake it had made. After what is probably still the most protracted and aggressive tech industry legal battle of all time, the BSD developers won sole custody of the de facto main line of Unix. BSD has been Unix's elder statesmen ever since, and guards one of the purest living, widely available iterations of Unix.</p>
+	
+	<p style="margin-top:20px;"><b style="font-size:14px;">Organizational Structure</b><br>
+	My conception of Unix and its accompanying overall approach to computing is what I call the "Unix Way." It is the intersection of Unix structure and Unix philosophy.<br><br>
+	
+	To begin with the structural side of the equation, let's consider the filesystem. The design is a tree, with every file starting at the root and branching from there. It's just that the "tree" is inverted, with the root at the top. Every file has its proper relation to "/" (the forward slash notation called "root"). The whole of the system is contained in the directories found here. Within each directory, you can have a practically unlimited number of files or other directories, each of which can have an unlimited number of files and directories of its own, and so on.<br><br>
+	
+	More importantly, every directory under root has a specific purpose. I covered this a while back in a piece on the Filesystem Hierarchy Standard, so I won't rehash it all here. But to give a few illustrative examples, the /boot directory stores everything your system needs to boot up. The /bin, /sbin, and /usr directories retain all your system binaries (the things that run programs). Configuration files that can alter how system-owned programs work live in /etc. All your personal files such as documents and media go in /home (to be more accurate, in your user account's directory in /home). The kind of data that changes all the time, namely logs, gets filed under /var.<br><br>
+	
+	In this way, Unix really lives by the old adage "a place for everything, and everything in its place." This is exactly why it's very easy to find whatever you're looking for. Most of the time, you can follow the tree one directory at a time to get to exactly what you need, simply by picking the directory whose name seems like the most appropriate place for your file to be. If that doesn't work, you can run commands like 'find' to dig up exactly what you're looking for. This organizational scheme also keeps clutter to a minimum. Things that are out-of-place stand out, at which point they can be moved or deleted.</p>
+	
+	<p style="margin-top:20px;"><b style="font-size:14px;">Everything Is a File</b><br>
+	Another convention which lends utility through elegance is the fact that everything in Unix is a file. Instead of creating another distinct digital structure for things like hardware and processes, Unix thinks of all of these as files. They may not all be files as we commonly understand them, but they are files in the computer science sense of being groups of bits.<br><br>
+	
+	This uniformity means that you are free to use a variety of tools for dealing with anything on your system that needs it. Documents and media files are files. Obvious as that sounds, it means they are treated like individual objects that can be referred to by other programs, whether according to their content format, metadata, or raw bit makeup.<br><br>
+	
+	Devices are files in Unix, too. No matter what hardware you connect to your system, it gets classified as a block device or a stream device. Users almost never mess with these devices in their file form, but the computer needs a way of classifying these devices so it knows how to interact with them. In most cases, the system invokes some program for converting the device "file" into an immediately usable form.<br><br>
+	
+	Block devices represent blocks of data. While block devices aren't treated like "files" in their entirety, the system can read segments of the block device by requesting a block number. Stream devices, on the other hand, are "files" that present streams of information, meaning bits that are being created or sent constantly by some process. A good example is a keyboard: it sends a stream of data as keys are pressed.<br><br>
+	
+	Even processes are files. Every program that you run spawns one or more processes that persist as long as the program does. Processes regularly start other processes, but can all be tracked by their unique process ID (PID) and grouped by the user that owns them. By classifying processes as files, locating and manipulating them is straightforward. This is what makes reprioritizing selfish processes or killing unruly ones possible.<br><br>
+	
+	To stray a bit into the weeds, you can witness the power of construing everything as a file by running the 'lsof' command. Short for "list open files," 'lsof' enumerates all files currently in use which fit certain criteria. Example criteria include whether or not the files use system network connections, or which process owns them.</p>
+	
+	<p style="margin-top:20px;"><b style="font-size:14px;">Virtues of Openness</b><br>
+	The last element I want to point out (though certainly not the last that wins my admiration) is Unix's open computing standard. Most, if not all, of the leading Unix projects are open source, which means they are accessible. This has several key implications.<br><br>
+	
+	First, anyone can learn from it. In fact, Linux was born out of a desire to learn and experiment with Unix. Linus Torvalds wanted a copy of Minix to study and modify, but its developers did not want to hand out its source code. In response, Torvalds simply made his own Unix kernel, Linux. He later published the kernel on the Internet for anyone else who also wanted to play with Unix. Suffice it to say that there was some degree of interest in his work.<br><br>
+	
+	Second, Unix's openness means anyone can deploy it. If you have a project that requires a computer, Unix can power it; and being highly adaptable due to its architecture, this makes it great for practically any application, from tinkering to running a global business.<br><br>
+	
+	Third, anyone can extend it. Again, due to its open-source model, anyone can take a Unix OS and run with it. Users are free to fork their own versions, as happens routinely with Linux distributions. More commonly, users can easily build their own software that runs on any type of Unix system.<br><br>
+	
+	This portability is all the more valuable by virtue of Unix and its derivatives running on more hardware than any other OS type. Linux alone can run on essentially all desktop or laptop devices, essentially all embedded devices including mobile devices, all server devices, and even supercomputers.<br><br>
+	
+	So, I wouldn't say there's nothing Unix can't do, but you'd be hard-pressed to find it.</p>
+	
+	<p style="margin-top:20px;"><b style="font-size:14px;">	A School of Thought, and Class Is in Session</b><br>
+	Considering the formidable undertaking that is writing an OS, most OS developers focus their work by defining a philosophy to underpin it. None has become so iconic and influential as the Unix philosophy. Its impact has reached beyond Unix to inspire generations of computer scientists and programmers.<br><br>
+	
+	There are multiple formulations of the Unix philosophy, so I will outline what I take as its core tenets.<br><br>
+	
+	In Unix, every tool should do one thing, but do that thing well. That sounds intuitive enough, but enough programs weren't (and still aren't) designed that way. What this precept means in practice is that each tool should be built to address only one narrow slice of computing tasks, but that it should also do so in a way that is simple to use and configurable enough to adapt to user preferences regarding that computing slice.<br><br>
+	
+	Once a few tools are built along these philosophical lines, users should be able to use them in combination to accomplish a lot (more on that in a sec). The "classic" Unix commands can do practically everything a fundamentally useful computer should be able to do.<br><br>
+	
+	With only a few dozen tools, users can:</p><br><br>
+	
+		<ul style="width:90%;margin-left:5%;line-height:10px;">
+			<li>Manage processes</li>
+			<li>Manipulate files and their contents irrespective of filetype</li>
+			<li>Configure hardware and networking devices</li>
+			<li>Manage installed software</li>
+			<li>Write and compile code into working binaries</li>
+		</ul>
+	
+	<p style="margin-top:20px;">
+	Another central teaching of Unix philosophy is that tools should not assume or impose expectations for how users will use their outputs or outcomes. This concept seems abstract, but is intended to achieve the very pragmatic benefit of ensuring that tools can be chained together. This only amplifies what the potent basic Unix toolset is capable of.<br><br>
+	
+	In actual practice, this allows the output of one command to be the input of another. Remember that I said that everything is a file? Program outputs are no exception. So, any command that would normally require a file can alternatively take the "file" that is the previous command's output.<br><br>
+	
+	Lastly, to highlight a lesser-known aspect of Unix, it privileges text handling and manipulation. The reason for this is simple enough: text is what humans understand. It is therefore what we want computational results delivered in.<br><br>
+	
+	Fundamentally, all computers truly do is transform some text into different text (by way of binary so that it can make sense of the text). Unix tools, then, should let users edit, substitute, format, and reorient text with no fuss whatsoever. At the same time, Unix text tools should never deny the user granular control.<br><br>
+	
+	In observing the foregoing dogmas, text manipulation is divided into separate tools. These include the likes of 'awk', 'sed', 'grep', 'sort', 'tr', 'uniq', and a host of others. Here, too, each is formidable on its own, but immensely powerful in concert.
+	</p>
+	
+	<p style="margin-top:20px;"><b style="font-size:14px;">True Power Comes From Within</b><br>
+	Regardless of how fascinating you may find them, it is understandable if these architectural and ideological distinctions seem abstruse. But whether or not you use your computer in a way that is congruent with these ideals, the people who designed your computer's OS and applications definitely did. These developers, and the pioneers before them, used the mighty tools of Unix to craft the computing experience you enjoy every day.<br><br>
+		
+	Nor are these implements relegated to some digital workbench in Silicon Valley. All of them are there -- sitting on your system anytime you want to access them -- and you may have more occasion to use them than you think. The majority of problems you could want your computer to solve aren't new, so there are usually old tools that already solve them. If you find yourself performing a repetitive task on a computer, there is probably a tool that accomplishes this for you, and it probably owes its existence to Unix.<br><br>
+		
+	In my time writing about technology, I have covered some of these tools, and I will likely cover yet more in time. Until then, if you have found the "Unix Way" as compelling as I have, I encourage you to seek out knowledge of it for yourself. The Internet has no shortage of this, I assure you. That's where I got it. </p>
+		
+</div>
+<div class="rp">
+	<h2>Recent posts:</h2>
+	<a href="adguard.html"class="oth-news">
+		<img style="width:100%;" src="./img/xl-2020-ubuntu-adguard-1.jpg" alt="banner">
+		<p>AdGuard Home: Another Brick in the Ad-Blocking Wall</p>
+	</a>
+	<a href="future.html" class="oth-news">
+		<img style="width:100%;" src="./img/xl-2015-artificial-intelligence-1.jpg" alt="banner">
+		<p>A Vision of the Future From Dell World</p>
+	</a>
+	<a href="edge.html"class="oth-news">
+		<img style="width:100%;" src="./img/xl-2020-edge-browser-1.jpg" alt="banner">
+		<p>Microsoft Hones Edge in Time for Holiday Shopping</p>
+	</a>
+	<a href="ai.html" class="oth-news">
+		<img style="width:100%;" src="./img/xl-2020-robot-on-keyboard.jpg" alt="banner">
+		<p>AI's Potential to Manage the Supply Chain</p>
+	</a>
+</div>
+</div>
+<footer style="padding:10px;margin:20px 0px;font-size:8px;color:#fff;background-color:#000;display:flex;justify-content:center;align-items:center;"><p>2020 all ©copyright reserved by techyalpha</p></footer>
+  </body>
+</html>
