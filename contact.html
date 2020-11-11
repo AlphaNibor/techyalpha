@@ -1,0 +1,96 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon.jpg">
+    <title>TechyAlpha</title>
+  
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  
+  <style type="text/css">
+  *{
+  	  margin:0;
+  	  padding:0;
+  	  }
+  	  .nav{
+  	  height:50px;
+  	  width:100%;
+  	  display:flex;
+  	  background-color:#000;
+  	  align-items:center;
+  	  justify-content:space-between;
+  	  }
+  	  .nav img{
+  	  width:130px;
+  	  height:30px;
+  	  margin-left:5%;
+  	  }
+  	  .nav-link{
+  	  width:300px;
+  	  display:flex;
+  	  margin-right:5%;
+  	  justify-content:space-evenly;
+  	  }
+  	  .nav-link a{
+  	  text-decoration:none;
+  	  color:#fff;
+  	  font-family: 'Syne Mono', monospace;
+  	  }
+  	  .contact{
+	  	  height:600px;
+	  	  width:100%;
+	  	  display:flex;
+	  	  flex-direction:column;
+	  	  background-color:#fff;
+	  	  align-items:center;
+	  	  font-family: 'Itim', cursive;
+	  	  justify-content:center;
+  	  }
+  	  .massage{
+	  	  font-family: 'Itim', cursive;
+	  	  padding:10px 160px 10px 20px;
+	  	  margin:10px 0px;
+	  	  border:1px solid #000;
+	  	  border-radius:20px;
+	  	  outline:none;
+  	  }
+  	  button{
+	  	  font-family: 'Itim', cursive;
+	  	  border:1px solid #000;
+	  	  background-color:#fff;
+	  	  border-radius:20px;
+	  	  outline:none;
+	  	  margin:10px 0px;
+	  	  padding:10px 60px;
+  	  }
+  	  button:hover{
+	  	  background-color:#000;
+	  	  color:#fff;
+	  	  transition:.5s;
+  	  }
+  </style>
+  
+  </head>
+<body>
+	<div class="nav">
+		<img src="./img/logo.png"alt="logo">
+		<p class="nav-link"><a href="index.html" >HOME</a> <a href="news.html" >BLOG</a> <a href="about.html" >ABOUT</a> <a href="contact.html" >CONTACT</a></p>
+	</div>
+	
+	<div class="contact">
+		<p style="font-size:25px;margin:20px;text-align:center;">If you want to ask question or give suggestions you should follow the steps below</p>
+		<input class="massage" type="text"placeholder="Full Name">
+		<input class="massage" type="email"placeholder="example@email.com">
+		<input class="massage" type="text"placeholder="Your Country">
+		<textarea style="font-family: 'Itim', cursive;padding:10px 170px 100px 20px;margin:10px 0px;border:1px solid #000;border-radius:20px;outline:none;">Your massage</textarea>
+		<button>SEND</button>
+	</div>
+	
+<footer style="padding:10px;font-size:8px;color:#fff;background-color:#000;display:flex;justify-content:center;align-items:center;"><p>2020 all ©copyright reserved by techyalpha</p></footer>
+	
+	
+</body>
+</html>

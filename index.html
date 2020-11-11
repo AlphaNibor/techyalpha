@@ -1,0 +1,271 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <title>TechyAlpha</title>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon.jpg">
+  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  <style type="text/css">
+  *{
+  margin:0;
+  padding:0;
+  }
+  body{
+  background-color:#000;
+  }
+  .nav{
+  height:50px;
+  width:100%;
+  display:flex;
+  background-color:#000;
+  align-items:center;
+  justify-content:space-between;
+  }
+  .nav img{
+  width:130px;
+  height:30px;
+  margin-left:5%;
+  }
+  .nav-link{
+  width:300px;
+  display:flex;
+  align-items:center;
+  margin-right:5%;
+  justify-content:space-evenly;
+  }
+  .nav-link a{
+  text-decoration:none;
+  color:#fff;
+  font-family: 'Syne Mono', monospace;
+  }
+  .slide{
+	  width:100%;
+	  height:550px;
+  }
+  .newses{
+  width:100%;
+  height:700px;
+  display:flex;
+  flex-direction:column;
+  font-family: 'Itim', cursive;
+  align-items:center;
+  justify-content:space-evenly;
+  background-color:#000;
+  }
+  .newses h1{
+	  font-size:50px;
+	  color:#fff;
+	  width:33%;
+	  text-align:center;
+	  border-bottom:3px solid #fff;
+  }
+  .news-section{
+	  height:250px;
+	  display:flex;
+	  justify-content:space-evenly;
+  }
+  .news{
+	  width:40%;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:space-evenly;
+	  align-items:center;
+	  text-align:center;
+	  text-decorations:none;
+  }
+  .news a{
+	  color:#fff;
+  }
+  .news img{
+	  width:95%;
+	  border-radius:20px;
+  }
+  
+  .oth-blogs{
+  width:100%;
+  height:2200px;
+  display:flex;
+  flex-direction:column;
+  font-family: 'Itim', cursive;
+  align-items:center;
+  justify-content:space-evenly;
+  background-color:#000;
+  }
+  .oth-blogs h1{
+  font-size:50px;
+  color:#fff;
+  width:33%;
+  text-align:center;
+  border-bottom:3px solid #fff;
+  }
+  .oth{
+  height:250px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#333;
+  }
+  .oth img{
+	  width:30%;
+	  height:70%;
+	  border-radius:20px;
+  }
+  .oth-blog-des{
+	  width:60%;
+	  display:flex;
+	  flex-direction:column;
+	  padding:15px;
+  }
+  .oth-blog-des h3{
+	  color:#fff;
+  }
+  .oth-blog-des h3,p{
+	  color:#fff;
+  }
+
+  </style>
+  </head>
+  <body>
+<div class="nav">
+	<img src="./img/logo.png"alt="logo">
+	<p class="nav-link"><a href="index.html" >HOME</a> <a href="news.html" >BLOG</a> <a href="about.html" >ABOUT</a> <a href="contact.html" >CONTACT</a></p>
+</div>
+<div class="slide">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="./news/adguard.html" ><img class="d-block w-100" src="./img/xl-2020-ubuntu-adguard-1.jpg" alt="First slide"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="./news/future.html" ><img class="d-block w-100" src="./img/xl-2015-artificial-intelligence-1.jpg" alt="Second slide"></a>
+    </div>
+    <div class="carousel-item">
+      <a href="./news/edge.html" ><img class="d-block w-100" src="./img/xl-2020-edge-browser-1.jpg" alt="Third slide"></a>
+      <div class="carousel-caption d-none d-md-block">
+      <h5 style="color:#000;font-size:35px;"><b>Microsoft Hones Edge in Time for Holiday Shopping</b></h5>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<div class="newses">
+	<h1>Latest News</h1>
+	<div class="news-section">
+		<div class="news">
+		<a href="./news/future.html" >
+			<img src="./img/xl-2015-artificial-intelligence-1.jpg">
+			<p>A Vision of the Future From Dell World</p>
+		</a>
+		</div>
+		
+		<div class="news">
+		<a href="./news/unix.html" >
+			<img src="./img/xl-2017-linux-terminal-1.jpg">
+			<p>The 'Unix Way'</p>
+		</a>
+		</div>
+	</div>
+	<div class="news-section">
+		<div class="news">
+		<a href="./news/ai.html" >
+			<img src="./img/xl-2020-robot-on-keyboard.jpg">
+			<p>AI's Potential to Manage the Supply Chain</p>
+		</a>
+		</div>
+		
+		<div class="news">
+		<a href="./news/edge.html" >
+			<img src="./img/xl-2020-edge-browser-1.jpg">
+			<p>MS Edge in Time for Holiday Shopping</p>
+		</a>
+		</div>
+	</div>
+</div>
+<div class="oth-blogs">
+	<h1>Other Blogs</h1>
+	<a href="https://readwrite.com/2020/11/09/6-brilliant-brain-hacks-for-the-remote-worker/" target="_blank"><div class="oth">
+		<img src="https://images.readwrite.com/wp-content/uploads/2020/10/6-Brilliant-Brain-Hacks-for-the-Remote-Worker-825x500.jpg">
+		<div class="oth-blog-des">
+			<h3>6 Brilliant Brain Hacks for the Remote Worker</h3>
+			<p>What was once a niche work lifestyle has become commonplace. Millions of Americans now work remotely – and millions more are ready to join in. While remote working offers many benefits, it also has its own distinct challenges that must be worked through. Understanding how to power through friction and optimize productivity for better output is the goal. Here are six brilliant brain hacks for the remote worker.</p>
+		</div>
+	</div></a>
+	<a href="https://readwrite.com/2020/11/09/how-to-create-a-successful-product-release-marketing-plan/" target="_blank"><div class="oth">
+		<img src="https://images.readwrite.com/wp-content/uploads/2020/10/How-to-Create-a-Successful-Product-Release-Marketing-Plan-825x500.jpg">
+		<div class="oth-blog-des">
+			<h3>How to Create a Successful Product Release Marketing Plan</h3>
+			<p>There’s always a new software or product launching in today’s ever-changing, fast-paced digital world and hoping to make traction. First impressions are extremely powerful, so it’s important to make a memorable impact. A successful product release marketing plan will capture your users’ attention and make a lasting impression.</p>
+		</div>
+	</div></a>
+	<a href="https://readwrite.com/2020/11/07/15-ecommerce-conversion-rate-optimization-tips-to-skyrocket-your-sales/" target="_blank"><div class="oth">
+		<img src="https://images.readwrite.com/wp-content/uploads/2020/09/15-eCommerce-Conversion-Rate-Optimization-Tips-825x500.jpg">
+		<div class="oth-blog-des">
+			<h3>15 eCommerce Conversion Rate Optimization Tips to Skyrocket Your Sales</h3>
+			<p>Is your eCommerce store working as it should? Are all the visitors making purchases from your store? If no, your eCommerce store needs improvements.</p>
+		</div>
+	</div></a>
+	<a href="https://readwrite.com/2020/11/06/how-smart-homes-power-the-post-pandemic-energy-evolution/" target="_blank"><div class="oth">
+		<img src="https://images.readwrite.com/wp-content/uploads/2020/09/How-Smart-Homes-Power-the-Post-Pandemic-Energy-Evolution-825x500.jpg">
+		<div class="oth-blog-des">
+			<h3>How Smart Homes Power the Post-Pandemic Energy Evolution</h3>
+			<p>Many of us have been cooped up inside for months in the face of the ongoing pandemic, transforming our living spaces into all-in-one offices, gyms, and schools. As a result, those lucky enough to be working remotely and earning expendable income during the “new normal” have been investing in upgrades for the home.</p>
+		</div>
+	</div></a>
+	<a href="https://readwrite.com/2020/11/05/top-8-sales-automation-tools-for-startups-in-2020/" target="_blank"><div class="oth">
+		<img src="https://images.readwrite.com/wp-content/uploads/2020/09/Top%E2%80%8C-%E2%80%8C8%E2%80%8C-%E2%80%8CSales%E2%80%8C-%E2%80%8CAutomation%E2%80%8C-%E2%80%8CTools%E2%80%8C-%E2%80%8Cfor%E2%80%8C-%E2%80%8CStartups%E2%80%8C-%E2%80%8Cin%E2%80%8C-%E2%80%8C2020%E2%80%8C-%E2%80%8C-825x500.jpg">
+		<div class="oth-blog-des">
+			<h3>Top‌ ‌8‌ ‌Sales‌ ‌Automation‌ ‌Tools‌ ‌for‌ ‌Startups‌ ‌in‌ ‌2020‌ ‌</h3>
+			<p>Startups today have no time for routine tasks related to data entry and administration. This is where sales automation comes into play, which helps optimize your manual tiresome and time-consuming assignments. </p>
+		</div>
+	</div></a>
+	<a href="https://readwrite.com/2020/11/05/how-ai-innovation-is-sharpening-photography-techniques/" target="_blank"><div class="oth">
+		<img src="https://images.readwrite.com/wp-content/uploads/2020/11/How-AI-Innovation-is-Sharpening-Photography-Techniques-825x500.jpg">
+		<div class="oth-blog-des">
+			<h3>How AI Innovation is Sharpening Photography Techniques</h3>
+			<p>Photography is more important today than at any other time in recent history. It is used across every space where someone wants to sell you something like services, products, news, and even educational information and programs.</p>
+		</div>
+	</div></a>
+	<a href="https://readwrite.com/2020/11/04/hr-automation-the-way-to-ensure-stable-business-growth/" target="_blank"><div class="oth">
+		<img src="https://images.readwrite.com/wp-content/uploads/2020/09/HR-Automation-The-Way-to-Ensure-Stable-Business-Growth-825x500.jpg">
+		<div class="oth-blog-des">
+			<h3>HR Automation – The Way to Ensure Stable Business Growth</h3>
+			<p>We are living in the age of technology and innovation. Traditional processes and workflows have become outdated. Operations and process models are being reinvented to increase cost-effectiveness. However, not all businesses are adapting to the revolutionized business process, which results in increased costs, a lack of efficiency, and halted growth. Outdated processes end up damaging your business and cause loss of customers.</p>
+		</div>
+	</div></a>
+	<a href="https://readwrite.com/2020/11/04/3-overlooked-strategies-for-getting-more-insights-out-of-your-data/" target="_blank"><div class="oth">
+		<img src="https://images.readwrite.com/wp-content/uploads/2020/09/3-Overlooked-Strategies-for-Getting-More-Insights-Out-of-Your-Data-825x500.jpg">
+		<div class="oth-blog-des">
+			<h3>3 Overlooked Strategies for Getting More Insights Out of Your Data</h3>
+			<p>Teams are drowning in data. The ease of collecting data has led to popularizing ideas like big data, data warehouses, and machine learning. The problem is that companies can get stuck trying sort through their data.</p>
+		</div>
+	</div></a>
+	
+</div>
+  
+<footer style="padding:10px;font-size:8px;color:#fff;background-color:#000;display:flex;justify-content:center;align-items:center;"><p>2020 all ©copyright reserved by techyalpha</p></footer>
+
+  </body>
+</html>
